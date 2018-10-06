@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/skopenow/micro-services/packages/skopenow/extract/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet">
+  <link href=".css/nv.d3.min.css" rel="stylesheet">
+  <link href=".css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/var/www/html/skopenow/micro-services/packages/skopenow/extract/src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Providers/ExtractServiceProvider.php.html#22">ExtractServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#32">ExtractController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#51">EntryPoint</a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="Youtube/Youtube.php.html#34">Youtube</a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Facebook/Images/UserUrlStrategy/UnNumericUsernameUrl.php.html#35">UnNumericUsernameUrl</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#39">UserImages</a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#40">PageImages</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#36">Post</a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="Twitter/Extractor/PostsExtractor.php.html#35">PostsExtractor</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#39">UserImages</a></td><td class="text-right">95</td></tr>
+       <tr><td><a href="Youtube/Youtube.php.html#34">Youtube</a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#40">PageImages</a></td><td class="text-right">26</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#36">Post</a></td><td class="text-right">26</td></tr>
+       <tr><td><a href="Twitter/Extractor/PostsExtractor.php.html#35">PostsExtractor</a></td><td class="text-right">9</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="EntryPoint.php.html#63"><abbr title="EntryPoint::extractFacebookPosts">extractFacebookPosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#117"><abbr title="ExtractController::extractTwitterPosts">extractTwitterPosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/ExtractServiceProvider.php.html#56"><abbr title="ExtractServiceProvider::provides">provides</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#299"><abbr title="Post::callGraph">callGraph</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Facebook/Images/UserUrlStrategy/UnNumericUsernameUrl.php.html#70"><abbr title="UnNumericUsernameUrl::getPhotosUrl">getPhotosUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#430"><abbr title="UserImages::getFacebookImagesDirectLink">getFacebookImagesDirectLink</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#102"><abbr title="EntryPoint::extractFacebookPageImages">extractFacebookPageImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/ExtractServiceProvider.php.html#43"><abbr title="ExtractServiceProvider::anonymousFunction:43#100">anonymousFunction:43#100</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#169"><abbr title="ExtractController::extractLinkedinSkills">extractLinkedinSkills</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#151"><abbr title="ExtractController::extractInstagramImages">extractInstagramImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#134"><abbr title="ExtractController::extractTwitterMedia">extractTwitterMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#186"><abbr title="ExtractController::extractLinkedinEndorsersUsingSkills">extractLinkedinEndorsersUsingSkills</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#99"><abbr title="ExtractController::extractYoutubeProfiles">extractYoutubeProfiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#80"><abbr title="ExtractController::extractFacebookPageImages">extractFacebookPageImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#119"><abbr title="EntryPoint::extractYoutubeProfiles">extractYoutubeProfiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#132"><abbr title="EntryPoint::extractTwitterPosts">extractTwitterPosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#145"><abbr title="EntryPoint::extractTwitterMedia">extractTwitterMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#160"><abbr title="EntryPoint::extractInstagramImages">extractInstagramImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/ExtractServiceProvider.php.html#36"><abbr title="ExtractServiceProvider::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#188"><abbr title="EntryPoint::extractLinkedinEndorsersUsingSkills">extractLinkedinEndorsersUsingSkills</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EntryPoint.php.html#175"><abbr title="EntryPoint::extractLinkedinSkills">extractLinkedinSkills</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#42"><abbr title="ExtractController::extractFacebookPosts">extractFacebookPosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ExtractController.php.html#59"><abbr title="ExtractController::extractFacebookUserImages">extractFacebookUserImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Youtube/Youtube.php.html#120"><abbr title="Youtube::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#346"><abbr title="UserImages::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#244"><abbr title="PageImages::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Twitter/Extractor/PostsExtractor.php.html#135"><abbr title="PostsExtractor::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Twitter/Extractor/MediaExtractor.php.html#137"><abbr title="MediaExtractor::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#280"><abbr title="Post::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Instagram/Instagram.php.html#225"><abbr title="Instagram::sendRequest">sendRequest</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#388"><abbr title="UserImages::anonymousFunction:388#1443">anonymousFunction:388#1443</abbr></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#141"><abbr title="PageImages::Extract">Extract</abbr></a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="Youtube/Youtube.php.html#139"><abbr title="Youtube::processData">processData</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#264"><abbr title="PageImages::getMoreLinks">getMoreLinks</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#176"><abbr title="Post::loopResults">loopResults</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#191"><abbr title="UserImages::Extract">Extract</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#489"><abbr title="UserImages::anonymousFunction:489#2089">anonymousFunction:489#2089</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="Instagram/Instagram.php.html#154"><abbr title="Instagram::Extract">Extract</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Youtube/Youtube.php.html#139"><abbr title="Youtube::processData">processData</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#388"><abbr title="UserImages::anonymousFunction:388#1443">anonymousFunction:388#1443</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#176"><abbr title="Post::loopResults">loopResults</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#191"><abbr title="UserImages::Extract">Extract</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#489"><abbr title="UserImages::anonymousFunction:489#2089">anonymousFunction:489#2089</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Instagram/Instagram.php.html#154"><abbr title="Instagram::Extract">Extract</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#141"><abbr title="PageImages::Extract">Extract</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#264"><abbr title="PageImages::getMoreLinks">getMoreLinks</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Facebook/Images/PageImages.php.html#244"><abbr title="PageImages::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Facebook/Images/UserImages.php.html#346"><abbr title="UserImages::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Facebook/Posts/Post.php.html#280"><abbr title="Post::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Instagram/Instagram.php.html#225"><abbr title="Instagram::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Twitter/Extractor/MediaExtractor.php.html#137"><abbr title="MediaExtractor::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Twitter/Extractor/PostsExtractor.php.html#135"><abbr title="PostsExtractor::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Youtube/Youtube.php.html#120"><abbr title="Youtube::sendRequest">sendRequest</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.2.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.18-1+deb.sury.org~trusty+1</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.3.0</a> at Sun Sep 17 16:25:11 EET 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([2,0,0,1,0,0,0,0,1,5,2,14], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([23,0,0,0,0,0,8,1,2,4,3,94], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[23.333333333333,9,"<a href=\"EntryPoint.php.html#51\">EntryPoint<\/a>"],[0,9,"<a href=\"ExtractController.php.html#32\">ExtractController<\/a>"],[100,2,"<a href=\"Facebook\/Images\/Iterator\/ImageIterator.php.html#33\">ImageIterator<\/a>"],[86.363636363636,25,"<a href=\"Facebook\/Images\/PageImages.php.html#40\">PageImages<\/a>"],[100,2,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DefaultUrl.php.html#35\">DefaultUrl<\/a>"],[100,2,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DesktopUrl.php.html#33\">DesktopUrl<\/a>"],[100,2,"<a href=\"Facebook\/Images\/PageUrlStrategy\/MobileUrl.php.html#33\">MobileUrl<\/a>"],[82.58064516129,70,"<a href=\"Facebook\/Images\/UserImages.php.html#39\">UserImages<\/a>"],[100,4,"<a href=\"Facebook\/Images\/UserUrlStrategy\/NumericUsernameUrl.php.html#35\">NumericUsernameUrl<\/a>"],[80,4,"<a href=\"Facebook\/Images\/UserUrlStrategy\/UnNumericUsernameUrl.php.html#35\">UnNumericUsernameUrl<\/a>"],[100,2,"<a href=\"Facebook\/Posts\/Iterator\/PostIterator.php.html#33\">PostIterator<\/a>"],[88.059701492537,25,"<a href=\"Facebook\/Posts\/Post.php.html#36\">Post<\/a>"],[91.228070175439,19,"<a href=\"Instagram\/Instagram.php.html#36\">Instagram<\/a>"],[100,2,"<a href=\"Instagram\/Iterator\/InstagramIterator.php.html#33\">InstagramIterator<\/a>"],[100,12,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#35\">SkillsEndorsersExtractor<\/a>"],[100,9,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#35\">SkillsExtractor<\/a>"],[100,2,"<a href=\"Linkedin\/Iterator\/LinkedinIterator.php.html#33\">LinkedinIterator<\/a>"],[100,4,"<a href=\"Linkedin\/Linkedin.php.html#37\">Linkedin<\/a>"],[0,3,"<a href=\"Providers\/ExtractServiceProvider.php.html#22\">ExtractServiceProvider<\/a>"],[90.322580645161,9,"<a href=\"Twitter\/Extractor\/MediaExtractor.php.html#35\">MediaExtractor<\/a>"],[88.888888888889,9,"<a href=\"Twitter\/Extractor\/PostsExtractor.php.html#35\">PostsExtractor<\/a>"],[100,2,"<a href=\"Twitter\/Iterator\/TwitterIterator.php.html#33\">TwitterIterator<\/a>"],[100,3,"<a href=\"Twitter\/Twitter.php.html#37\">Twitter<\/a>"],[100,2,"<a href=\"Youtube\/Iterator\/YoutubeIterator.php.html#33\">YoutubeIterator<\/a>"],[77.551020408163,22,"<a href=\"Youtube\/Youtube.php.html#34\">Youtube<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"EntryPoint.php.html#63\">EntryPoint::extractFacebookPosts<\/a>"],[100,1,"<a href=\"EntryPoint.php.html#82\">EntryPoint::extractFacebookUserImages<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#102\">EntryPoint::extractFacebookPageImages<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#119\">EntryPoint::extractYoutubeProfiles<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#132\">EntryPoint::extractTwitterPosts<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#145\">EntryPoint::extractTwitterMedia<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#160\">EntryPoint::extractInstagramImages<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#175\">EntryPoint::extractLinkedinSkills<\/a>"],[0,1,"<a href=\"EntryPoint.php.html#188\">EntryPoint::extractLinkedinEndorsersUsingSkills<\/a>"],[0,1,"<a href=\"ExtractController.php.html#42\">ExtractController::extractFacebookPosts<\/a>"],[0,1,"<a href=\"ExtractController.php.html#59\">ExtractController::extractFacebookUserImages<\/a>"],[0,1,"<a href=\"ExtractController.php.html#80\">ExtractController::extractFacebookPageImages<\/a>"],[0,1,"<a href=\"ExtractController.php.html#99\">ExtractController::extractYoutubeProfiles<\/a>"],[0,1,"<a href=\"ExtractController.php.html#117\">ExtractController::extractTwitterPosts<\/a>"],[0,1,"<a href=\"ExtractController.php.html#134\">ExtractController::extractTwitterMedia<\/a>"],[0,1,"<a href=\"ExtractController.php.html#151\">ExtractController::extractInstagramImages<\/a>"],[0,1,"<a href=\"ExtractController.php.html#169\">ExtractController::extractLinkedinSkills<\/a>"],[0,1,"<a href=\"ExtractController.php.html#186\">ExtractController::extractLinkedinEndorsersUsingSkills<\/a>"],[100,1,"<a href=\"Facebook\/Images\/Iterator\/ImageIterator.php.html#50\">ImageIterator::setResults<\/a>"],[100,1,"<a href=\"Facebook\/Images\/Iterator\/ImageIterator.php.html#61\">ImageIterator::getIterator<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#85\">PageImages::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#100\">PageImages::setSessId<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#114\">PageImages::setRequestOptions<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#128\">PageImages::setOldResult<\/a>"],[68.75,5,"<a href=\"Facebook\/Images\/PageImages.php.html#141\">PageImages::Extract<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#178\">PageImages::getResults<\/a>"],[100,3,"<a href=\"Facebook\/Images\/PageImages.php.html#191\">PageImages::getPageUrlStrategy<\/a>"],[100,2,"<a href=\"Facebook\/Images\/PageImages.php.html#210\">PageImages::getRequestUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageImages.php.html#227\">PageImages::getCurlOptions<\/a>"],[50,2,"<a href=\"Facebook\/Images\/PageImages.php.html#244\">PageImages::sendRequest<\/a>"],[77.777777777778,3,"<a href=\"Facebook\/Images\/PageImages.php.html#264\">PageImages::getMoreLinks<\/a>"],[100,4,"<a href=\"Facebook\/Images\/PageImages.php.html#287\">PageImages::extractPagePhotos<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DefaultUrl.php.html#50\">DefaultUrl::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DefaultUrl.php.html#60\">DefaultUrl::getUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DesktopUrl.php.html#48\">DesktopUrl::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/DesktopUrl.php.html#58\">DesktopUrl::getUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/MobileUrl.php.html#48\">MobileUrl::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/PageUrlStrategy\/MobileUrl.php.html#58\">MobileUrl::getUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#106\">UserImages::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#122\">UserImages::setSessId<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#136\">UserImages::setRequestOptions<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#150\">UserImages::setLimit<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#164\">UserImages::setExtractLevel<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#178\">UserImages::setOldResult<\/a>"],[82.978723404255,9,"<a href=\"Facebook\/Images\/UserImages.php.html#191\">UserImages::Extract<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#282\">UserImages::getResults<\/a>"],[100,2,"<a href=\"Facebook\/Images\/UserImages.php.html#295\">UserImages::getFacebookUsernameUrls<\/a>"],[100,2,"<a href=\"Facebook\/Images\/UserImages.php.html#314\">UserImages::getRequestUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#330\">UserImages::getCurlOptions<\/a>"],[50,2,"<a href=\"Facebook\/Images\/UserImages.php.html#346\">UserImages::sendRequest<\/a>"],[100,3,"<a href=\"Facebook\/Images\/UserImages.php.html#366\">UserImages::countPhotosFromOneAlbum<\/a>"],[100,10,"<a href=\"Facebook\/Images\/UserImages.php.html#386\">UserImages::getNumberPhotos<\/a>"],[56.521739130435,10,"<a href=\"Facebook\/Images\/UserImages.php.html#388\">UserImages::anonymousFunction:388#1443<\/a>"],[0,1,"<a href=\"Facebook\/Images\/UserImages.php.html#430\">UserImages::getFacebookImagesDirectLink<\/a>"],[100,7,"<a href=\"Facebook\/Images\/UserImages.php.html#445\">UserImages::getFacebookUsername<\/a>"],[100,8,"<a href=\"Facebook\/Images\/UserImages.php.html#479\">UserImages::runRequestLoop<\/a>"],[84.615384615385,7,"<a href=\"Facebook\/Images\/UserImages.php.html#489\">UserImages::anonymousFunction:489#2089<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserImages.php.html#542\">UserImages::anonymousFunction:542#2416<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/NumericUsernameUrl.php.html#50\">NumericUsernameUrl::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/NumericUsernameUrl.php.html#60\">NumericUsernameUrl::getProfileUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/NumericUsernameUrl.php.html#70\">NumericUsernameUrl::getPhotosUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/NumericUsernameUrl.php.html#80\">NumericUsernameUrl::getAlbumUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/UnNumericUsernameUrl.php.html#50\">UnNumericUsernameUrl::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/UnNumericUsernameUrl.php.html#60\">UnNumericUsernameUrl::getProfileUrl<\/a>"],[0,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/UnNumericUsernameUrl.php.html#70\">UnNumericUsernameUrl::getPhotosUrl<\/a>"],[100,1,"<a href=\"Facebook\/Images\/UserUrlStrategy\/UnNumericUsernameUrl.php.html#80\">UnNumericUsernameUrl::getAlbumUrl<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Iterator\/PostIterator.php.html#50\">PostIterator::setResults<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Iterator\/PostIterator.php.html#61\">PostIterator::getIterator<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Post.php.html#97\">Post::__construct<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Post.php.html#113\">Post::setSessId<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Post.php.html#127\">Post::setRequestOptions<\/a>"],[100,3,"<a href=\"Facebook\/Posts\/Post.php.html#140\">Post::Extract<\/a>"],[82.608695652174,10,"<a href=\"Facebook\/Posts\/Post.php.html#176\">Post::loopResults<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Post.php.html#217\">Post::getResults<\/a>"],[100,1,"<a href=\"Facebook\/Posts\/Post.php.html#230\">Post::getFullLink<\/a>"],[100,2,"<a href=\"Facebook\/Posts\/Post.php.html#245\">Post::getRequestUrl<\/a>"],[100,2,"<a href=\"Facebook\/Posts\/Post.php.html#261\">Post::getCurlOptions<\/a>"],[50,2,"<a href=\"Facebook\/Posts\/Post.php.html#280\">Post::sendRequest<\/a>"],[0,1,"<a href=\"Facebook\/Posts\/Post.php.html#299\">Post::callGraph<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#98\">Instagram::__construct<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#113\">Instagram::setLimit<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#127\">Instagram::setOldPhotos<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#141\">Instagram::setRequestOptions<\/a>"],[89.473684210526,6,"<a href=\"Instagram\/Instagram.php.html#154\">Instagram::Extract<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#196\">Instagram::getResults<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#208\">Instagram::getCurlOptions<\/a>"],[50,2,"<a href=\"Instagram\/Instagram.php.html#225\">Instagram::sendRequest<\/a>"],[95,4,"<a href=\"Instagram\/Instagram.php.html#245\">Instagram::getNodes<\/a>"],[100,1,"<a href=\"Instagram\/Instagram.php.html#286\">Instagram::getNodeHtml<\/a>"],[100,1,"<a href=\"Instagram\/Iterator\/InstagramIterator.php.html#50\">InstagramIterator::addResult<\/a>"],[100,1,"<a href=\"Instagram\/Iterator\/InstagramIterator.php.html#61\">InstagramIterator::getIterator<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#72\">SkillsEndorsersExtractor::__construct<\/a>"],[100,4,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#84\">SkillsEndorsersExtractor::Process<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#117\">SkillsEndorsersExtractor::getCurlOptions<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#132\">SkillsEndorsersExtractor::toArray<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#146\">SkillsEndorsersExtractor::getRequestUrl<\/a>"],[100,2,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#159\">SkillsEndorsersExtractor::sendRequest<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#162\">SkillsEndorsersExtractor::anonymousFunction:162#483<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsEndorsersExtractor.php.html#167\">SkillsEndorsersExtractor::anonymousFunction:167#556<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#72\">SkillsExtractor::__construct<\/a>"],[100,3,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#84\">SkillsExtractor::Process<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#116\">SkillsExtractor::getCurlOptions<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#131\">SkillsExtractor::getRequestUrl<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#145\">SkillsExtractor::sendRequest<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#148\">SkillsExtractor::anonymousFunction:148#415<\/a>"],[100,1,"<a href=\"Linkedin\/Extractor\/SkillsExtractor.php.html#152\">SkillsExtractor::anonymousFunction:152#454<\/a>"],[100,1,"<a href=\"Linkedin\/Iterator\/LinkedinIterator.php.html#50\">LinkedinIterator::addResult<\/a>"],[100,1,"<a href=\"Linkedin\/Iterator\/LinkedinIterator.php.html#61\">LinkedinIterator::getIterator<\/a>"],[100,1,"<a href=\"Linkedin\/Linkedin.php.html#55\">Linkedin::__construct<\/a>"],[100,2,"<a href=\"Linkedin\/Linkedin.php.html#68\">Linkedin::Extract<\/a>"],[100,1,"<a href=\"Linkedin\/Linkedin.php.html#85\">Linkedin::getResults<\/a>"],[0,1,"<a href=\"Providers\/ExtractServiceProvider.php.html#36\">ExtractServiceProvider::register<\/a>"],[0,1,"<a href=\"Providers\/ExtractServiceProvider.php.html#43\">ExtractServiceProvider::anonymousFunction:43#100<\/a>"],[0,1,"<a href=\"Providers\/ExtractServiceProvider.php.html#56\">ExtractServiceProvider::provides<\/a>"],[100,1,"<a href=\"Twitter\/Extractor\/MediaExtractor.php.html#65\">MediaExtractor::__construct<\/a>"],[95.238095238095,5,"<a href=\"Twitter\/Extractor\/MediaExtractor.php.html#78\">MediaExtractor::Process<\/a>"],[100,1,"<a href=\"Twitter\/Extractor\/MediaExtractor.php.html#117\">MediaExtractor::getCurlOptions<\/a>"],[50,2,"<a href=\"Twitter\/Extractor\/MediaExtractor.php.html#137\">MediaExtractor::sendRequest<\/a>"],[100,1,"<a href=\"Twitter\/Extractor\/PostsExtractor.php.html#65\">PostsExtractor::__construct<\/a>"],[94.117647058824,5,"<a href=\"Twitter\/Extractor\/PostsExtractor.php.html#78\">PostsExtractor::Process<\/a>"],[100,1,"<a href=\"Twitter\/Extractor\/PostsExtractor.php.html#115\">PostsExtractor::getCurlOptions<\/a>"],[50,2,"<a href=\"Twitter\/Extractor\/PostsExtractor.php.html#135\">PostsExtractor::sendRequest<\/a>"],[100,1,"<a href=\"Twitter\/Iterator\/TwitterIterator.php.html#50\">TwitterIterator::setResults<\/a>"],[100,1,"<a href=\"Twitter\/Iterator\/TwitterIterator.php.html#61\">TwitterIterator::getIterator<\/a>"],[100,1,"<a href=\"Twitter\/Twitter.php.html#55\">Twitter::__construct<\/a>"],[100,1,"<a href=\"Twitter\/Twitter.php.html#68\">Twitter::Extract<\/a>"],[100,1,"<a href=\"Twitter\/Twitter.php.html#82\">Twitter::getResults<\/a>"],[100,1,"<a href=\"Youtube\/Iterator\/YoutubeIterator.php.html#50\">YoutubeIterator::addResult<\/a>"],[100,1,"<a href=\"Youtube\/Iterator\/YoutubeIterator.php.html#61\">YoutubeIterator::getIterator<\/a>"],[100,1,"<a href=\"Youtube\/Youtube.php.html#60\">Youtube::__construct<\/a>"],[100,2,"<a href=\"Youtube\/Youtube.php.html#75\">Youtube::Extract<\/a>"],[100,1,"<a href=\"Youtube\/Youtube.php.html#92\">Youtube::getResults<\/a>"],[100,1,"<a href=\"Youtube\/Youtube.php.html#106\">Youtube::getRequestUrl<\/a>"],[50,2,"<a href=\"Youtube\/Youtube.php.html#120\">Youtube::sendRequest<\/a>"],[75,15,"<a href=\"Youtube\/Youtube.php.html#139\">Youtube::processData<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

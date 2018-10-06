@@ -1,0 +1,14 @@
+{
+    "name": "skopenow/acceptance",
+    "description": "The place where we accept or reject the results found .",
+    "authors": [
+        {
+            "name": "Ahmed Samir",
+            "email": "ahmedsamir732@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev":{
+	"phpunit/phpunit": "~6.3"
+    }
+}

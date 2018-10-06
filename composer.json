@@ -1,0 +1,61 @@
+{
+    "name": "laravel/lumen",
+    "description": "The Laravel Lumen Framework.",
+    "keywords": ["framework", "laravel", "lumen"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/lumen-framework": "5.5.*",
+	    "flipbox/lumen-generator": "5.4.*",
+        "vlucas/phpdotenv": "~2.2",
+        "aws/aws-sdk-php": "^3.36",
+        "illuminate/redis": "5.5.*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "^6.3",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Skopenow\\Combinations\\": "packages/skopenow/combinations/src",
+            "Skopenow\\HttpRequestsService\\": "packages/skopenow/httprequests/src",
+            "Skopenow\\HttpRequests\\": "packages/skopenow/httprequests/src/classes",
+            "Skopenow\\HttpRequests\\Interfaces\\": "packages/skopenow/httprequests/src/interfaces",
+            "Skopenow\\Validation\\": "packages/skopenow/validation/src",
+            "Skopenow\\ServiceMapper\\": "packages/skopenow/servicemapper/src",
+            "Skopenow\\Formatter\\": "packages/skopenow/formatter/src",
+            "Skopenow\\NameInfo\\": "packages/skopenow/nameinfo/src",
+            "Skopenow\\UrlInfo\\": "packages/skopenow/urlinfo/src",
+            "Skopenow\\Extract\\": "packages/skopenow/extract/src",
+            "Skopenow\\Logger\\": "packages/skopenow/logger/src",
+            "Skopenow\\Location\\": "packages/skopenow/location/src",
+            "Skopenow\\Acceptance\\": "packages/skopenow/acceptance/src",
+            "Skopenow\\Matching\\": "packages/skopenow/matching/src",
+            "Skopenow\\Reports\\": "packages/skopenow/reports/src",
+            "Skopenow\\Search\\": "packages/skopenow/search/src",
+            "Skopenow\\PeopleData\\": "packages/skopenow/peopledata/src",
+            "Skopenow\\Datapoint\\": "packages/skopenow/datapoint/src",
+            "Skopenow\\Relationship\\": "packages/skopenow/relationship/src",
+            "Skopenow\\Api\\": "packages/skopenow/api/src"
+        },
+        "files": [
+            "app/helpers_autoload.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/",
+            "database/"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"if (!file_exists('.env')){copy('.env.example', '.env');}\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

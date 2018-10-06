@@ -1,0 +1,78 @@
+{
+ "queries": {
+  "request": [
+   {
+    "title": "Google Custom Search - \"rob douglas\"",
+    "totalResults": "4210",
+    "searchTerms": "\"rob douglas\"",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "014046186005632967208:e5ct1qrq4j8"
+   }
+  ],
+  "nextPage": [
+   {
+    "title": "Google Custom Search - \"rob douglas\"",
+    "totalResults": "4210",
+    "searchTerms": "\"rob douglas\"",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "014046186005632967208:e5ct1qrq4j8"
+   }
+  ]
+ },
+ "searchInformation": {
+  "searchTime": 0.526606,
+  "formattedSearchTime": "0.53",
+  "totalResults": "4210",
+  "formattedTotalResults": "4,210"
+ },
+ "items": [
+  {
+   "title": "Rob Douglas - Wikipedia",
+   "link": "https://en.wikipedia.org/wiki/Rob_Douglas"
+  },
+  {
+   "title": "Identity Theft Expert Rob Douglas' Biography",
+   "link": "http://www.identitytheft.info/robdouglas.aspx"
+  },
+  {
+   "title": "Rob Douglas | Professional Profile",
+   "link": "https://www.linkedin.com/in/robdouglas01"
+  },
+  {
+   "title": "Rob Douglas Profiles | Facebook",
+   "link": "https://www.facebook.com/public/Rob-Douglas"
+  },
+  {
+   "title": "Rob Douglas | Professional Profile",
+   "link": "https://ca.linkedin.com/in/robmdouglas"
+  },
+  {
+   "title": "Rob Douglas (@RobDouglas3) | Twitter",
+   "link": "https://twitter.com/robdouglas3?lang=en"
+  },
+  {
+   "title": "Paper , Shadows and Light.: Home Page.",
+   "link": "http://www.papershadowsandlight.com/"
+  },
+  {
+   "title": "Rob Douglas (@RobMDouglas7) | Twitter",
+   "link": "https://twitter.com/robmdouglas7?lang=en"
+  },
+  {
+   "title": "Rob Douglas Archives | BioConnect",
+   "link": "https://www.bioconnect.com/tag/rob-douglas/"
+  },
+  {
+   "title": "Fastest Sailor in the World! Rob Douglas \"interview\" - YouTube",
+   "link": "https://www.youtube.com/watch?v=FzP2CMAQ7qA"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "skopenow/cleanup",
+    "description": "The place where the results will be filtered and cleaned up .",
+    "require-dev": {
+        "phpunit/phpunit": "~6.3"
+    },
+    "authors": [
+        {
+            "name": "Ahmed Samir",
+            "email": "ahmedsamir732@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Skopenow\\Cleanup\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="tests/bootstrap.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+         
+    <testsuites>
+        <testsuite name="SkopeNow">
+            <directory suffix="Test.php">./tests</directory>
+            <exclude>./tests/EntryPointTest.php</exclude>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>src/</directory>
+        </whitelist>
+        <blacklist>
+            <directory>./src/routes</directory>
+        </blacklist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="docs/coverage"/>
+        <log type="coverage-clover" target="docs/logs/clover.xml"/>
+        <log type="coverage-crap4j" target="docs/logs/crap4j.xml"/>
+        <log type="coverage-xml" target="docs/logs/coverage"/>
+        <log type="junit" target="docs/logs/junit.xml"/>
+        <log type="testdox-html" target="docs/testdox/index.html"/>
+    </logging>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+    </php>
+    
+</phpunit>

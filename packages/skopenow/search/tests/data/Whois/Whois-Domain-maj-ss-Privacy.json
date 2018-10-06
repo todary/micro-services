@@ -1,0 +1,63 @@
+{
+    "status": 1,
+    "domain_name": "maj-ss.com",
+    "query_time": "2017-10-17 08:55:03",
+    "whois_server": "whois.in2net.com",
+    "domain_registered": "yes",
+    "create_date": "2012-03-08",
+    "update_date": "2017-03-05",
+    "expiry_date": "2018-03-08",
+    "domain_registrar": {
+        "iana_id": 604,
+        "registrar_name": "In2net Network Inc.",
+        "whois_server": "whois.in2net.com",
+        "website_url": "https://www.in2net.com",
+        "email_address": "abuse@in2net.com",
+        "phone_number": "604-608-6868"
+    },
+    "registrant_contact": {
+        "full_name": "Registrant Privacy",
+        "company_name": "RegistrantPrivacy.com",
+        "mailing_address": "P.O. Box 43083 Cascade",
+        "city_name": "Burnaby",
+        "state_name": "BC",
+        "zip_code": "V5G 4S2",
+        "country_name": "Canada",
+        "country_code": "CA",
+        "email_address": "maj-ss.com@registrantprivacy.com",
+        "phone_number": "+1.6046290575"
+    },
+    "administrative_contact": {
+        "full_name": "Registrant Privacy",
+        "company_name": "RegistrantPrivacy.com",
+        "mailing_address": "P.O. Box 43083 Cascade",
+        "city_name": "Burnaby",
+        "state_name": "BC",
+        "zip_code": "V5G 4S2",
+        "country_name": "Canada",
+        "country_code": "CA",
+        "email_address": "maj-ss.com@registrantprivacy.com",
+        "phone_number": "+1.6046290575"
+    },
+    "technical_contact": {
+        "full_name": "Registrant Privacy",
+        "company_name": "RegistrantPrivacy.com",
+        "mailing_address": "P.O. Box 43083 Cascade",
+        "city_name": "Burnaby",
+        "state_name": "BC",
+        "zip_code": "V5G 4S2",
+        "country_name": "Canada",
+        "country_code": "CA",
+        "email_address": "maj-ss.com@registrantprivacy.com",
+        "phone_number": "+1.6046290575"
+    },
+    "name_servers": [
+        "ns19.allsitecontrol.com",
+        "ns20.allsitecontrol.com"
+    ],
+    "domain_status": [
+        "clientTransferProhibited",
+        "clientUpdateProhibited"
+    ],
+    "raw_whois": "Domain Name: MAJ-SS.COM\nDomain ID: 1706142265_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.in2net.com\nRegistrar URL: https://www.in2net.com\nUpdated Date: 2017-03-05T01:29:59Z\nCreation Date: 2012-03-08T07:35:11Z\nRegistrar Registration Expiration Date: 2018-03-08T07:35:11Z\nRegistrar: In2net Network Inc.\nRegistrar IANA ID: 604\nRegistrar Abuse Contact Email: abuse@in2net.com\nRegistrar Abuse Contact Phone: 604-608-6868\nReseller: Doteasy Technology Inc.\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nRegistry Registrant ID: \nRegistrant Name: Registrant Privacy\nRegistrant Organization: RegistrantPrivacy.com\nRegistrant Street: P.O. Box 43083 Cascade\nRegistrant City: Burnaby\nRegistrant State/Province: BC\nRegistrant Postal Code: V5G 4S2\nRegistrant Country: CA\nRegistrant Phone: +1.6046290575\nRegistrant Phone Ext: \nRegistrant Fax: \nRegistrant Fax Ext: \nRegistrant Email: maj-ss.com@RegistrantPrivacy.com\nRegistry Admin ID: \nAdmin Name: Registrant Privacy\nAdmin Organization: RegistrantPrivacy.com\nAdmin Street: P.O. Box 43083 Cascade\nAdmin City: Burnaby\nAdmin State/Province: BC\nAdmin Postal Code: V5G 4S2\nAdmin Country: CA\nAdmin Phone: +1.6046290575\nAdmin Phone Ext: \nAdmin Fax: \nAdmin Fax Ext: \nAdmin Email: maj-ss.com@RegistrantPrivacy.com\nRegistry Tech ID: \nTech Name: Registrant Privacy\nTech Organization: RegistrantPrivacy.com\nTech Street: P.O. Box 43083 Cascade\nTech City: Burnaby\nTech State/Province: BC\nTech Postal Code: V5G 4S2\nTech Country: CA\nTech Phone: +1.6046290575\nTech Phone Ext: \nTech Fax: \nTech Fax Ext: \nTech Email: maj-ss.com@RegistrantPrivacy.com\nName Server: NS19.ALLSITECONTROL.COM\nName Server: NS20.ALLSITECONTROL.COM\nDNSSEC: unsigned\nURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\n>>> Last update of WHOIS database: 2017-03-05T01:29:59Z <<<\n\n\"For more information on Whois status codes, please visit https://icann.org/epp\"\n\nRegistration Service Provider:\n    Doteasy Technology Inc.\n    http://www.doteasy.com\n    Unlimited web hosting with free domain from only US$3.98/month.\n    Unlimited Space/MySQL/PHP/Email. Instant Wordpress Install.\n    30-Day Money Back Guarantee.\n    \n    This company may be contacted for domain login/passwords,\n    DNS/Nameserver changes, and general domain support questions.\n\nThe Data in the In2net Registrar WHOIS database is provided to you by\nIn2net Network Inc. for information purposes only, and may be used to\nassist you in obtaining information about or related to a domain name's\nregistration record.\n\nIn2net makes this information available \"as is,\" and does not guarantee\nits accuracy.\n\nBy submitting a WHOIS query, you agree that you will use this data only\nfor lawful purposes and that, under no circumstances will you use this data\nto: (a) allow, enable, or otherwise support the transmission by e-mail,\ntelephone, or facsimile of mass, unsolicited, commercial advertising or\nsolicitations to entities other than the data recipient's own existing\ncustomers; or (b) enable high volume, automated, electronic processes\nthat send queries or data to the systems of any Registry Operator or\nICANN-Accredited registrar, except as reasonably necessary to register\ndomain names or modify existing registrations.\n\nThe compilation, repackaging, dissemination or other use of this Data is\nexpressly prohibited without the prior written consent of In2net.\n\nIn2net reserves the right to terminate your access to the In2net WHOIS\ndatabase in its sole discretion, including without limitation, for excessive\nquerying of the WHOIS database or for failure to otherwise abide by this\npolicy.\n\nIn2net reserves the right to modify these terms at any time.\n\nBy submitting this query, you agree to abide by these terms.\n\nNOTE: THE WHOIS DATABASE IS A CONTACT DATABASE ONLY. LACK OF A\nDOMAIN RECORD DOES NOT SIGNIFY DOMAIN AVAILABILITY.\n\nAbout In2net, please visit: http://www.in2net.com"
+}

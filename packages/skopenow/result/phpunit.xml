@@ -1,0 +1,31 @@
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite name="result">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+    </php>
+
+    <logging>
+        <log type="coverage-html" target="docs/coverage"/>
+        <log type="coverage-clover" target="docs/logs/clover.xml"/>
+        <log type="coverage-crap4j" target="docs/logs/crap4j.xml"/>
+        <log type="coverage-xml" target="docs/logs/coverage"/>
+        <log type="junit" target="docs/logs/junit.xml"/>
+        <log type="testdox-html" target="docs/testdox/index.html"/>
+    </logging>
+    
+    <filter>
+            <whitelist processUncoveredFilesFromWhitelist="true">
+                <directory suffix=".php">./src/</directory>
+            </whitelist>
+    </filter>
+
+    
+
+</phpunit>

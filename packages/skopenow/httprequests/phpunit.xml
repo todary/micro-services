@@ -1,0 +1,25 @@
+<phpunit bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="MaqeBot">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    
+
+    <logging>
+        <log type="coverage-html" target="docs/coverage"/>
+        <log type="coverage-clover" target="docs/logs/clover.xml"/>
+        <log type="coverage-crap4j" target="docs/logs/crap4j.xml"/>
+        <log type="coverage-xml" target="docs/logs/coverage"/>
+        <log type="junit" target="docs/logs/junit.xml"/>
+        <log type="testdox-html" target="docs/testdox/index.html"/>
+    </logging>
+    
+    <filter>
+            <whitelist processUncoveredFilesFromWhitelist="true">
+                <directory suffix=".php">./src/classes/</directory>
+                <directory suffix=".php">./src/interfaces/</directory>
+            </whitelist>
+    </filter>
+
+</phpunit>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2017-09-14T10:34:27+00:00">
+  <file name="/var/www/html/skopenow/micro-services/packages/skopenow/extract/src/Facebook/Images/UserImages.php">
+    <violation beginline="393" endline="393" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $numImagesFromOneAlbum. Keep variable name length under 20.
+    </violation>
+  </file>
+  <file name="/var/www/html/skopenow/micro-services/packages/skopenow/extract/src/Linkedin/Extractor/SkillsEndorsersExtractor.php">
+    <violation beginline="177" endline="177" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $e. Configured minimum length is 3.
+    </violation>
+  </file>
+  <file name="/var/www/html/skopenow/micro-services/packages/skopenow/extract/src/Linkedin/Extractor/SkillsExtractor.php">
+    <violation beginline="160" endline="160" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $e. Configured minimum length is 3.
+    </violation>
+  </file>
+</pmd>

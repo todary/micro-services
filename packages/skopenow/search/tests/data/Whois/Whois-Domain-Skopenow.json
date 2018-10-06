@@ -1,0 +1,61 @@
+{
+    "status": 1,
+    "domain_name": "skopenow.com",
+    "query_time": "2017-10-16 11:18:16",
+    "whois_server": "whois.godaddy.com",
+    "domain_registered": "yes",
+    "create_date": "2013-10-04",
+    "update_date": "2016-07-11",
+    "expiry_date": "2019-10-04",
+    "domain_registrar": {
+        "iana_id": 146,
+        "registrar_name": "GoDaddy.com, LLC",
+        "whois_server": "whois.godaddy.com"
+    },
+    "registrant_contact": {
+        "full_name": "Robert Douglas",
+        "company_name": "Skopenow, Inc.",
+        "mailing_address": "100 Ring Road West",
+        "city_name": "Garden City",
+        "state_name": "New York",
+        "zip_code": "11530",
+        "country_name": "United States",
+        "country_code": "US",
+        "email_address": "robert@skopenow.com",
+        "phone_number": "00518002521437"
+    },
+    "administrative_contact": {
+        "full_name": "Rob Douglas",
+        "company_name": "Skopenow, Inc.",
+        "mailing_address": "50 Ring Road West",
+        "city_name": "Garden City",
+        "state_name": "New York",
+        "zip_code": "11530",
+        "country_name": "United States",
+        "country_code": "US",
+        "email_address": "rob@skopenow.com",
+        "phone_number": "18002521437"
+    },
+    "technical_contact": {
+        "full_name": "Robert Douglas",
+        "company_name": "Skopenow, Inc.",
+        "mailing_address": "100 Ring Road West",
+        "city_name": "Garden City",
+        "state_name": "New York",
+        "zip_code": "11530",
+        "country_name": "United States",
+        "country_code": "US",
+        "email_address": "rob@skopenow.com",
+        "phone_number": "18002521437"
+    },
+    "name_servers": [
+        "ns-1692.awsdns-19.co.uk",
+        "ns-527.awsdns-01.net",
+        "ns-499.awsdns-62.com",
+        "ns-1381.awsdns-44.org"
+    ],
+    "domain_status": [
+        "clientTransferProhibited clientUpdateProhibited clientRenewProhibited clientDeleteProhibited"
+    ],
+    "raw_whois": "Domain Name: skopenow.com\nRegistry Domain ID: 1829869140_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2016-07-11T15:52:24Z\nCreation Date: 2013-10-04T12:52:42Z\nRegistrar Registration Expiration Date: 2019-10-04T12:52:42Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistry Registrant ID: Not Available From Registry\nRegistrant Name: Robert Douglas\nRegistrant Organization: Skopenow, Inc.\nRegistrant Street: 100 Ring Road West\nRegistrant City: Garden City\nRegistrant State/Province: New York\nRegistrant Postal Code: 11530\nRegistrant Country: US\nRegistrant Phone: +1.8002521437\nRegistrant Phone Ext: \nRegistrant Fax: \nRegistrant Fax Ext: \nRegistrant Email: rob@skopenow.com\nRegistry Admin ID: Not Available From Registry\nAdmin Name: Robert Douglas\nAdmin Organization: Skopenow, Inc.\nAdmin Street: 100 Ring Road West\nAdmin City: Garden City\nAdmin State/Province: New York\nAdmin Postal Code: 11530\nAdmin Country: US\nAdmin Phone: +1.8002521437\nAdmin Phone Ext: \nAdmin Fax: \nAdmin Fax Ext: \nAdmin Email: rob@skopenow.com\nRegistry Tech ID: Not Available From Registry\nTech Name: Robert Douglas\nTech Organization: Skopenow, Inc.\nTech Street: 100 Ring Road West\nTech City: Garden City\nTech State/Province: New York\nTech Postal Code: 11530\nTech Country: US\nTech Phone: +1.8002521437\nTech Phone Ext: \nTech Fax: \nTech Fax Ext: \nTech Email: rob@skopenow.com\nName Server: NS-1692.AWSDNS-19.CO.UK\nName Server: NS-527.AWSDNS-01.NET\nName Server: NS-499.AWSDNS-62.COM\nName Server: NS-1381.AWSDNS-44.ORG\nDNSSEC: unsigned\nURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\n>>> Last update of WHOIS database: 2017-09-25T05:00:00Z <<<\n\nFor more information on Whois status codes, please visit https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en\n\nThe data contained in GoDaddy.com, LLC's WhoIs database,\nwhile believed by the company to be reliable, is provided \"as is\"\nwith no guarantee or warranties regarding its accuracy.  This\ninformation is provided for the sole purpose of assisting you\nin obtaining information about domain name registration records.\nAny use of this data for any other purpose is expressly forbidden without the prior written\npermission of GoDaddy.com, LLC.  By submitting an inquiry,\nyou agree to these terms of usage and limitations of warranty.  In particular,\nyou agree not to use this data to allow, enable, or otherwise make possible,\ndissemination or collection of this data, in part or in its entirety, for any\npurpose, such as the transmission of unsolicited advertising and\nand solicitations of any kind, including spam.  You further agree\nnot to use this data to enable high volume, automated or robotic electronic\nprocesses designed to collect or compile this data for any purpose,\nincluding mining this data for your own personal or commercial purposes. \n\nPlease note: the registrant of the domain name is specified\nin the \"registrant\" section.  In most cases, GoDaddy.com, LLC \nis not the registrant of domain names listed in this database."
+}

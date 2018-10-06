@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>AOL OpenId Identity</title>
+<link href="https://sns-static.aolcdn.com/auth_v17_r6/style/openAuth.css" rel="stylesheet" type="text/css"/>
+<link rel="openid.server" href="https://api.screenname.aol.com/auth/openidServer" />
+<link rel="openid2.provider" href="https://api.screenname.aol.com/auth/openidServer" />
+<style>
+#oa-hdr-text { position: absolute; top: -5px; left: 185px; overflow: hidden; }
+#oa-body { height: 70px; width: 100%; }
+#oa-icon { width: 70px; height: 70px; }
+#oa-icon img { padding: 10px; }
+#oa-profile { position: relative; top: -65px; left: 75px; height: 70px; }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    bN_cfg = {
+        h: location.hostname,
+        p: {
+            'dL_ch' : 'us.snssignin',
+            'dL_dpt' : 'ssologin',
+            'dL_sDpt' : 'auth',
+            'dL_flid' : '0',
+            'ap_la': 'en-us',
+            'tenant':'aol',
+            'nm':'OpenAuth'
+        }
+    };
+
+    (function(d){
+        var s=document.createElement("script"),
+        h=document.getElementsByTagName("head")[0];
+        s.src = 'https://s.aolcdn.com/os/aol/beacon.min.js';
+        h.appendChild(s);
+    })(document);
+
+</script>
+   <!-- Container Divs -->
+   <div id="oa-container">
+      <!-- Header -->
+      <div id="oa-hdr">
+        <img src="https://sns-static.aolcdn.com/auth_v17_r6/images/aol_logo.png" alt="" />
+        <div id="oa-hdr-text"><h1>Identity Page</h1></div>
+        <h2></h2>
+      </div>
+
+      <!-- Content -->
+      <div id="oa-body">
+
+        <div id="oa-icon"><img src="http://api.oscar.aol.com/expressions/get?t=MissG3128&f=native&type=buddyIcon&defaultId=00052b0000316e" width="48" height="48" alt=""/></div>
+        <div id="oa-profile"><p><h2><a href="http://profiles.aim.com/MissG3128">Profile</a> for MissG3128</h2></p></div>
+
+      </div>
+
+      <!-- Footer -->
+      <div id="oa-ftr">
+        <span id="ftr-lnks">
+          <a href="http://www.aol.com" id="oa-aol" target="oaHelp">aol.com</a>
+          &nbsp;|&nbsp;
+          <a href="http://about.aol.com/aolnetwork/aol_pp.html" id="oa-pp" target="oaHelp"/></a>
+          &nbsp;|&nbsp;
+          <a href="http://about.aol.com/aolnetwork/terms_use.html " id="oa-tos" target="oaHelp"/></a>
+          &nbsp;|&nbsp;
+          <a href="/auth/common/helpUiDriver.jsp?secTip=1&language=en-us" id="oa-security" target="oaHelp"/></a>
+          &nbsp;|&nbsp;
+          <a href="http://help.channels.aol.com/topic.adp?topicId=SG_SignIn" id="oa-help" target="oaHelp"/></a>
+        </span>
+      </div>
+   </div>
+</body>
+</html>

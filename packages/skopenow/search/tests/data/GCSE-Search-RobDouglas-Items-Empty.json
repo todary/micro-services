@@ -1,0 +1,36 @@
+{
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - rob douglas",
+        "totalResults": "3050000",
+        "searchTerms": "rob douglas",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "014046186005632967208:e5ct1qrq4j8"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - rob douglas",
+        "totalResults": "3050000",
+        "searchTerms": "rob douglas",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "014046186005632967208:e5ct1qrq4j8"
+      }
+    ]
+  },
+  "searchInformation": {
+    "searchTime": 0.866173,
+    "formattedSearchTime": "0.87",
+    "totalResults": "3050000",
+    "formattedTotalResults": "3,050,000"
+  }
+}

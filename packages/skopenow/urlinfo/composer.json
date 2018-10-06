@@ -1,0 +1,17 @@
+{
+    "autoload":
+    {
+    	"psr-4": {
+    		"Skopenow\\UrlInfo\\": "src/",
+            "Skopenow\\UrlInfo\\Tests\\": "tests/"
+    	}
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

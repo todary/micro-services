@@ -1,0 +1,8 @@
+/vendor
+/output
+/tests/coverage
+/.idea
+Homestead.json
+Homestead.yaml
+/docs
+.env

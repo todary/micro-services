@@ -1,0 +1,1344 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <meta name="fragment" content="!"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+
+
+            <script type="text/javascript">
+        function csAppHttpsChecker() {
+            var redirect = false;
+
+            var hash = location.hash.substring(1).replace('-', '_');
+            if( '/' == hash.substring(0, 1) ) hash = hash.substring(1);
+
+            // Force reload if no hash
+            if( arguments.length ) {
+                var params = arguments[0];
+                if( 'undefined' != params.force && params.force ) {
+                    if( '' == hash ) {
+                        redirect = true;
+                    }
+                }
+            }
+
+            var check = ['apply', 'programs/ajax_application'];
+
+            // Hash check
+            if( ! redirect ) {
+                if( '' != hash ) {
+                    for( i in  check ) {
+                        var lookfor = check[i];
+                        if( hash.substring( 0, lookfor.length ) == lookfor ) {
+                            redirect = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // URL check
+            if( ! redirect ) {
+                var url = location.href.replace('-', '_');
+                if( '' != location.hash ) url = url.substr( 0, url.length - location.hash.length );
+                if( '' != location.search ) url = url.substr( 0, url.length - location.search.length );
+
+                for( i in  check ) {
+                    var lookfor = check[i];
+                    if( url.length > lookfor.length + 1 ) {
+                        if( url.substring( url.length - lookfor.length - 1 ) == '/' + lookfor ) {
+                            redirect = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Actual redirect
+            if( redirect ) {
+                if(window.ActiveXObject) {
+                    document.execCommand('Stop');
+                }
+                else if (typeof window.stop == 'function') {
+                    window.stop();
+                }
+                window.location = 'https://www.f6s.com/rob' + '/apply';
+            }
+        }
+            </script>
+
+        <script type="text/javascript">
+            document.write('<link rel="stylesheet" type="text/css" href="https://www.f6s.com/css/css3.css?u=63d552b5e689a5e2cc620e536126e1a8">');
+
+                        var amplitudeAPIKey = 'dc099953cc16705558db966428dbd78c';
+
+        </script>
+
+        <meta name="google-site-verification" content="j5KgwvYdnpRqkypVsjMCqYcSn11bI40y_ncPeiWXTa0" />
+        <meta name='yandex-verification' content='43a98e3975808609' /> <!-- Http -->
+        <meta name='yandex-verification' content='53bd9d546683a0c4' /> <!-- Https -->
+        <meta name="msvalidate.01" content="C1E70A09AADF4E14F0F905BF6FFC17A4" />
+        <meta property="wb:webmaster" content="cf75098762e2133f" />
+
+                    <link rel="icon" href="https://www.f6s.com/images/favicon.png" type="image/png">
+            <link rel="shortcut icon" href="https://www.f6s.com/favicon.ico" type="image/vnd.microsoft.icon">
+
+        <!-- Fonts -->
+        <link type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:700&amp;subset=latin,cyrillic" rel="stylesheet">
+        <link type="text/css" href="https://www.f6s.com/vendor/lib/fortawesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- /Fonts -->
+
+                    <link rel="stylesheet" type="text/css" href="https://www.f6s.com/dist/css/main.min.css?u=63d552b5e689a5e2cc620e536126e1a8">
+
+        <!--[if !IE 7]><style type="text/css">div.content-wrap { display:table; height:100%; width:100%; }</style><![endif]-->
+                        <link rel="stylesheet" type="text/css" href="https://www.f6s.com/css/profile.css?u=63d552b5e689a5e2cc620e536126e1a8" />
+
+
+
+        <!-- Site CSS -->
+
+                    <link rel="stylesheet" type="text/css" href="https://www.f6s.com/dist/css/compiled/extra/profile-singlecol.min.css?u=63d552b5e689a5e2cc620e536126e1a8" />
+                        <link rel="stylesheet" type="text/css" href="https://www.f6s.com/dist/css/compiled/extra/profile-personal.min.css?u=63d552b5e689a5e2cc620e536126e1a8" />
+
+
+                    <link rel="stylesheet" type="text/css" href="https://www.f6s.com/dist/css/compiled/extra/overrides.min.css?u=63d552b5e689a5e2cc620e536126e1a8" />
+
+
+        <link rel="stylesheet" type="text/css" media="print" href="https://www.f6s.com/css/print.css?u=63d552b5e689a5e2cc620e536126e1a8" />
+        <!-- END of Site CSS -->
+
+        <!-- Site Javascript -->
+        <script>
+    window.DEVICE = {
+        isMobile:    false,
+        isTablet:    false,
+        isHandheld:  false,
+        isiOS:       false,
+        isAndroidOS: false,
+        browser: {
+            name: "chrome",
+            version: 60        }
+    };
+
+            window.DEVICE['isChrome'] = true;
+            window.DEVICE['isSafari'] = false;
+            window.DEVICE['isFirefox'] = false;
+            window.DEVICE['isEdge'] = false;
+            window.DEVICE['isIE'] = false;
+            window.DEVICE['isOpera'] = false;
+    </script>
+
+                <script type="text/javascript" src="https://www.f6s.com/dist/js/main.min.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+                <script type="text/javascript" src="https://www.f6s.com/dist/js/webpack-init.min.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+        <script type="text/javascript" src="https://www.f6s.com/dist/js/webpack-core.min.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+
+
+        <script type="text/javascript">
+            var SVG_SPRITE_FILE = 'https://www.f6s.com/images/svg/__sprites.svg';
+            var SVG_SPRITE_REV = 1504185492;
+        </script>
+        <script type="text/javascript">/**
+ * Cache SVG Sprite in localStorage
+ *
+ * Source: http://osvaldas.info/caching-svg-sprite-in-localstorage
+ */
+;(function(window, document) {
+    'use strict';
+
+    var file = SVG_SPRITE_FILE;
+    var revision = SVG_SPRITE_REV;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+        },
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('SVGSpriteRev') == revision) {
+        data = localStorage.getItem('SVGSpriteData');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('SVGSpriteData', data);
+                    localStorage.setItem('SVGSpriteRev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch(e) {
+
+    }
+
+}(window, document));</script>        <!-- END of F6S Javascript -->
+
+        <script type="text/javascript">
+            // Image preloader
+            var preload_arr = new Array('images/icons.png', 'images/title-qtip-bg.png', 'images/title-qtip-pointer.png');
+            for(i in preload_arr) {
+                var preload_img = new Image();
+                preload_img.src = 'https://www.f6s.com/'+preload_arr[i]+'?u=63d552b5e689a5e2cc620e536126e1a8';
+            }
+        </script>
+        <script type="text/javascript">
+            String.prototype.reverse = function(){ return this.split('').reverse().join(''); }
+
+            var cs = new Cs({
+                site_url : "/moc.s6f.www//:sptth".reverse(),
+                site_url_ssl : "/moc.s6f.www//:sptth".reverse(),
+                site_url_main: "https://www.f6s.com/",
+                login_page_path: 'main/authorization/login',
+                fbAppId : '196388037101827',
+                fbUserData : 'public_profile, email, user_friends',
+                fbEnabled: true,
+                weiboAppKey : '637677210',
+                youtubeKey : 'AIzaSyDhFXlLfZosCDgAix2Y9yInkbbVwWFj5uM',
+                storageRevision: '63d552b5e689a5e2cc620e536126e1a8',
+                storageItems: {
+                    skills: '/system/search/autocomplete-markets-list',
+                    timezones: '/system/search/ajax-timezones-list'
+                }
+            });
+            var userIsAuthenticated = true;
+
+            // on document load cs function prototype
+            Cs.prototype.onDocumentLoad = function(){
+                // Popup init with version
+                csPopup = cs.components().popup({version: 2});
+
+
+
+
+                //trigger check for hash changed or exists
+                $(window).trigger( 'hashchange' );
+            }
+        </script>
+
+        <script type="text/javascript" src="https://www.f6s.com/system/languages/js-language/en?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+
+
+        <script type="text/javascript" src="https://www.f6s.com/js/default.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+        <!-- END of Site Javascript -->
+
+        <title>Rob Bertholf | F6S</title>
+
+                    <meta name="description" CONTENT="Rob Bertholf: Marketing Technologist. Social Media Advocacy & SEO Expert. Developer. Leader at Blue Startups Spring 2013. User Startup Experience, Connection">
+
+
+                    <link rel="canonical" href="https://www.f6s.com/rob">
+
+                    <meta property="fb:app_id" content="196388037101827" />
+            <meta property="og:type" content="profile" />
+            <meta property="og:url" content="https://www.f6s.com/rob" />
+            <meta property="og:title" content="Rob Bertholf" />
+            <meta property="profile:username" content="rob" />
+                            <meta property="profile:first_name" content="Rob" />
+                <meta property="profile:last_name" content="Bertholf" />
+                        <meta property="og:site_name" content="F6S" />
+
+        <!-- embedded code -->
+
+    <script type="text/javascript">
+
+        // Google Analytics Script
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26460905-1']);
+        _gaq.push(['_setDomainName', 'f6s.com']);
+
+        // Track IP address as event
+        _gaq.push(['_trackEvent', 'IP address', '156.205.190.200']);
+
+        // Google Analytics - set custom variables
+                // 'Section' variable set at page level ==> slot 1
+            _gaq.push(['_setCustomVar', 1, 'Section', 'Personal Profile', 3]);
+
+        // 'Logged' variable set at session level ==> slot 2
+        _gaq.push(['_setCustomVar', 2, 'Logged', 'true', 2]);
+
+        _gaq.push(['_trackPageview']);
+
+
+
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+            <script type="text/javascript">
+    function csAddDealButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?popup_type=deal&hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=create_deal&invite_type=leader&temp=1');
+                }
+
+    function csAddOrganizationButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=profile');
+                }
+
+    function csAddEventButtonClick() {
+                    window.location = 'https://www.f6s.com/account/accelerators/add-event';
+                }
+
+    function csAddProgramButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?popup_type=program&hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=add_application&invite_type=leader&temp=1');
+                }
+
+    function csAddAngelGroupButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?popup_type=angelgroup&hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=angel_application&invite_type=leader&temp=1');
+                }
+
+    function csAddInvestFundButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?popup_type=fund&hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=add_fund&invite_type=leader&temp=1');
+                }
+
+    function csAddJobButtonClick() {
+                    csPopup.display('/account/organizations/popup-create-organization?popup_type=job&hide_parent=1&hide_description=1&hide_type=1&redirect_after_close=create_job&invite_type=leader&temp=1');
+                }
+</script>        <!-- embedded code -->
+
+
+        <meta property="og:image" content="https://s3.amazonaws.com/f6s-public/profiles/792970_th1.jpg">
+<meta property="og:description" content="Rob Bertholf: Marketing Technologist. Social Media Advocacy &amp; SEO Expert. Developer. Leader at Blue Startups Spring 2013. User Startup Experience, Connection">
+<meta name="_token" content="-sSBARcPk04sba_fimYXKTpw6XtaHt32xP77tahEELo">    </head>
+
+        <body class="
+        prefix-profile        ux-0-9
+        rrd rd        resp        custom-page-profile-main-main        has-bar                        chrome        chrome-60        desktop            ">
+                <div class="mw " data-mod-name="welcome_user">
+<script type="text/javascript">
+    $(function() {
+        csShowBar();
+    });
+
+
+    function csShowBar() {
+        // Prepare the text to display in the Welcome Bar
+        var text = "Welcome Home, Mohammed. F6S is the largest Founder & Startup Community";
+
+        // Add a link to the default page for logged users
+        text += '<span class="h-bar-buttons"><a \
+            href="https://www.f6s.com/" \
+            onclick="csHideBar()" \
+            class="action noline" \
+        >Find out more</a></span>';
+
+        csNewUserBar = cs.components().slidePanel({
+            version: 2
+        });
+
+        csNewUserBar.display(
+            text,
+            {
+                color: 'blue',
+                autoclose: false,
+                closeOnEscape: false,
+                sticky: false,
+                showCross: true,
+                onClose: function() {
+                    csHideBar();
+                }
+            }
+        )
+    }
+
+    // Insert a temporary to always hide the Welcome User bar
+    function csHideBar() {
+        $.post('/account/main/ajax_remove_temporary', {temporary: 'show_new_user_bar'});
+    }
+</script></div>
+                <div class="content-wrap">
+            <div id="fb-root"></div>
+            <div id="otnPopup" class="popup"><div class="popup_holder popup_centered"><div class="popup_area"><div class="popup_area_content"></div></div></div></div>
+<script type="text/javascript">
+    cs.data.set('user', {
+        isLogged: true,
+        isAlpha: false,
+        isAdvanced: false    });
+
+            cs.data.set('user.info', {
+            actor_id: 2154472,
+            presentation: "Mohammed Attya",
+            fname: "Mohammed",
+            lname: "Attya",
+            profileCompletion: 16,
+            url: "https://www.f6s.com/mohammedattya",
+            thumbnail: "https://s3.amazonaws.com/f6s-public/profiles/1605197_th2.jpg"
+        });
+        cs.data.set('user.token', 'o9Bq4ZGouc6UgsqLxqmlztudoZael9rGyF4=');
+        cs.data.set('user.logoutToken', '5ffeb0395040022a0e20f6aff9674e22');
+
+    cs.data.set('mainNav', [
+            {
+                text: "Startups",
+                url: "https://www.f6s.com/startups",
+                selected: false            },
+            {
+                text: "Apply",
+                url: 'https://www.f6s.com/programs',
+                selected: false            },
+            {
+                text: "Events",
+                url: 'https://www.f6s.com/events',
+                selected: false            },
+            {
+                text: "Jobs",
+                url: 'https://www.f6s.com/jobs',
+                selected: false            },
+            {
+                text: "Benefits",
+                                url: 'https://www.f6s.com/deals',
+                selected: false            },
+                            ]);
+    cs.data.set('addYourItems', [
+            {
+                text: "Job Listing",
+                onClick: csAddJobButtonClick
+            },
+            {
+                text: "Startup",
+                onClick: csAddOrganizationButtonClick
+            },
+            {
+                text: "Benefit/Deal",
+                onClick: csAddDealButtonClick
+            },
+            {
+                text: "Accelerator",
+                onClick: csAddProgramButtonClick
+            },
+            {
+                text: "Event",
+                onClick: csAddEventButtonClick
+            },
+            {
+                text: "Contest",
+                onClick: csAddProgramButtonClick
+            },
+            {
+                text: "Fund",
+                onClick: csAddInvestFundButtonClick
+            },
+    ]);
+</script>
+
+<div id="slide-menu-wrapper">
+    <slide-menu></slide-menu>
+</div>
+
+<header id="top-bar" class="main-bar" data-role="topbar">
+        <span class="header-button slide-menu-toggle" @click="toggleNavBar"></span>
+
+    <a class="logo" href="https://www.f6s.com/"><img src="https://www.f6s.com/images/f6s-logo.png" alt="F6S" /></a>
+
+    <nav id="header-nav">
+        <header-nav-item
+            v-for="(navItem, index) in navItems"
+            :key="index"
+            :item="navItem"
+        ></header-nav-item>
+    </nav>
+
+    <header-dropdown
+        id="header-addyour"
+        class=""
+        caption="Add your"
+        :items="addYourItems"
+    ></header-dropdown>
+
+    <header-search
+        url="https://www.f6s.com/search"
+        placeholder="Search F6S"
+    ></header-search>
+
+            <a class="user-area hide-mobile" href="https://www.f6s.com/mohammedattya">
+            <img src="https://s3.amazonaws.com/f6s-public/profiles/1605197_th2.jpg" />
+        </a>
+
+</header>
+
+<script type="text/javascript">
+    initNav(cs);
+
+    var blockActionHandlers = {
+        recruitment: csAddJobButtonClick
+    }
+</script><div id="top" class="custom-page-top-profile-main-main">
+    <script type="text/javascript">
+        cs.data.set('profile', {
+        actor_id: 82092,
+        url: "https://www.f6s.com/rob",
+        thumbnail: "https://s3.amazonaws.com/f6s-public/profiles/792970_th2.jpg",
+        isEditable: false,
+    });
+    </script>
+<div id="profile-top">
+    </div></div>
+<div id="content" class="content_holder  custom-page-holder-main-main">
+    <div class="middle">
+        <div id="profile-content">
+    <div id="profile-main-content">
+    <script type="text/javascript" src="https://www.f6s.com/js/cs/pictures/pictures.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+<script type="text/javascript" src="https://www.f6s.com/plugins/uploadify/swfobject.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+<script type="text/javascript" src="https://www.f6s.com/plugins/uploadify/jquery.uploadify.v2.1.4.min.js?u=63d552b5e689a5e2cc620e536126e1a8"></script>
+
+<div class="overall-wrapper">
+    <div id="csPageTop">
+        <!-- Top Wrapper -->
+        <div class="top-wrapper personal">
+            <div class="mw " data-mod-name="cover_personal">
+<div class="cover-wrapper no-cover" id="cover-wrapper">
+            <div class="cover"></div>
+        </div>
+
+<div class="top-content" id="top-content">
+    <div class="top-content-inside relative">
+        <!-- Profile Image -->
+        <div class="profile-picture-container" id="profile-picture">
+            <div class="mw " data-mod-name="profile_thumbnail">
+<!--
+ --><div class="profile-picture rounded">
+                <img src="https://s3.amazonaws.com/f6s-public/profiles/792970_th1.jpg" />
+    </div><!--
+
+ --><!--
+     --><script type="text/javascript">
+        document.body.style.minHeight = '2000px';
+        document.getElementById('profile-picture').scrollIntoView();
+        window.scrollBy(0, -70);
+        $(function() {
+            $('body').css('min-height', '');
+        });
+     --></script>
+    <!--
+
+ --></div>
+        </div>
+        <!-- /Profile Image -->
+
+        <div class="profile-details" id="profile-details">
+            <div class="cover-text">
+                <h1 class="cover-title">Rob Bertholf</h1>
+
+                <div class="mw cover-blurb inline" data-mod-name="tagline">
+    Marketing Technologist.  Social Media Advocacy & SEO Expert.  Developer.    </div>
+                <div class="profile-detail-blocks">
+                    <div class="mw profile-types-wrapper t b18 t-white" data-mod-name="profile_types">
+    <span
+            >
+        General Business &bull; Marketing    </span>
+    </div>
+                    <div class="mw t b18 t-white" data-mod-name="location_cover">
+
+
+<span
+    id="csInlineLocation"
+    class="input size-b18 color-none t-white "
+>
+    <span class="attachment" style="width: 13px;"><i class="fa fa-map-marker"></i></span>
+    <span class="inner">
+                                    Honolulu, US                            </span>
+</span>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Person",
+                            "workLocation": {
+                    "@type": "Place",
+                    "address": {
+                        "@type" : "PostalAddress",
+                        "addressCountry": "United States",
+                        "addressLocality": "Honolulu"
+                    }
+                }
+                        }
+    </script>
+
+<div class="separator"></div></div>
+                    <div class="mw profile-links-wrapper t b18 t-white" data-mod-name="links_cover">
+    <div class="cover-links link-icon-container white">
+        <a
+        class="link-icon link-website fa-website"
+        title="Rob Bertholf&#39;s website"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href="http://saasapi.com"
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "http://saasapi.com"
+        }
+    </script>
+        <a
+        class="link-icon link-website fa-website"
+        title="Rob Bertholf&#39;s website"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href="http://rob.bertholf.com"
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "http://rob.bertholf.com"
+        }
+    </script>
+        <a
+        class="link-icon link-website fa-website"
+        title="Rob Bertholf&#39;s website"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href="http://bertholf.com"
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "http://bertholf.com"
+        }
+    </script>
+        <a
+        class="link-icon link-website fa-website"
+        title="Rob Bertholf&#39;s website"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href=""
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "http://robbertholf.com"
+        }
+    </script>
+        <a
+        class="link-icon link-facebook fa-facebook"
+        title="Rob Bertholf&#39;s Facebook page"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href="https://www.facebook.com/RobBertholf.Hawaii"
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "https://www.facebook.com/RobBertholf.Hawaii"
+        }
+    </script>
+        <a
+        class="link-icon link-twitter fa-twitter"
+        title="Rob Bertholf&#39;s Twitter page"
+         data-ga='{"section":"Personal Profile","feature":"Identity Link"}'        target="_blank"
+        href="https://twitter.com/@rob"
+    ></a>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@id": "https://www.f6s.com/rob",
+            "@type": "Organization",
+            "sameAs": "https://twitter.com/@rob"
+        }
+    </script>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-actions-container="true" data-mod-group="actions-top-desktop" class="hide-mobile">
+            <div class="mw inline-centered" data-mod-name="actions_cover">
+    <div class="profile-action top right inline-centered">
+                    <span id="csProfileFollow"></span>
+            <script type="text/javascript">
+                cs.builder().button('csProfileFollow', {
+                    color: 'white-50',
+                    title: "Follow",
+    onClick: function() {
+        var self = this;
+        self.disable();
+        csPopup.display('/account/contacts/popup-create-relationship?actor_id=2154472&to_actor_id=82092&type=follow', {
+            allowUserClose: false,
+            onClose: function() {
+                self.enable();
+            }
+        });
+    }
+                    });
+            </script>
+                        <span id="csProfileMessage"></span>
+            <script type="text/javascript">
+                cs.builder().button('csProfileMessage', {
+                    color: 'white-50',
+                    title: "Message",
+text: "Message",
+onClick: function() {
+                    var self = this;
+                self.disable();
+                csPopup.display("/account/contacts/popup-create-relationship?actor_id=2154472&to_actor_id=82092&type=follow&message=message-when-follow-back");
+                }                });
+            </script>
+                </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+<div data-actions-container="true" data-mod-group="actions-top-mobile" class="only-mobile">
+    <div class="mw mobile-actions" data-mod-name="actions_cover_mobile">
+    <div>
+        <span id="csProfileFollowMobile"></span>
+        <script type="text/javascript">
+            cs.builder().button('csProfileFollowMobile', {
+                color: 'none',
+                fullWidth: true,
+                title: "Follow",
+    onClick: function() {
+        var self = this;
+        self.disable();
+        csPopup.display('/account/contacts/popup-create-relationship?actor_id=2154472&to_actor_id=82092&type=follow', {
+            allowUserClose: false,
+            onClose: function() {
+                self.enable();
+            }
+        });
+    }
+                });
+        </script>
+    </div>
+        <div>
+        <span id="csProfileMessageMobile"></span>
+        <script type="text/javascript">
+            cs.builder().button('csProfileMessageMobile', {
+                color: 'none',
+                fullWidth: true,
+                title: "Message",
+text: "Message",
+onClick: function() {
+                    var self = this;
+                self.disable();
+                csPopup.display("/account/contacts/popup-create-relationship?actor_id=2154472&to_actor_id=82092&type=follow&message=message-when-follow-back");
+                }            });
+        </script>
+    </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@id": "https://www.f6s.com/rob",
+        "@type": "Person",
+        "name": "Rob Bertholf",
+        "url": "https://www.f6s.com/rob",
+                    "description": "Marketing Technologist. Social Media Advocacy & SEO Expert. Developer.",
+                    "image": "https://s3.amazonaws.com/f6s-public/profiles/792970_original.jpg"
+    }
+</script>
+</div>
+        </div>
+        <!-- /Top Wrapper -->
+
+        <!-- Floating menu -->
+        <div id="csFloatingMenuWrapper" class="h-bar no-padding profile-menu-wrapper has-profile-blip hide-mobile">
+            <nav id="csFloatingMenu" class="h-bar-content profile-menu">
+                <a class="profile-blip" rel="about">
+                    <div class="profile-img i32" onClick="csProfileMenu.itemClick(this);">
+                        <img
+                            src="https://s3.amazonaws.com/f6s-public/profiles/792970_th3.jpg"
+                            class="profile i32"
+                        />
+                    </div>
+                    <div class="profile-name t b16 t-bold no-scale" onClick="csProfileMenu.itemClick(this);">
+                        Rob Bertholf                    </div>
+                </a>
+                <div class="profile-menu-content">
+                    <ul class="csProfileMenuList">
+                        <li
+    class="  selected"
+    rel="about"
+    data-item='{"type": "about"}'
+>
+    <a
+        href="/rob"        data-hash="{&#34;leave&#34;:&#34;rob&#34;}"        onclick="csProfileMenu.itemClick(this);"
+        class=""
+    >
+        About    </a>
+</li><li
+    class=" hide-mobile "
+    rel="experience"
+    data-item='{"type": "experience"}'
+>
+    <a
+        href="/rob"        data-hash="{&#34;leave&#34;:&#34;rob&#34;}"        onclick="csProfileMenu.itemClick(this);"
+        class=""
+    >
+        Experience    </a>
+</li><li
+    class=" hide-mobile "
+    rel="recommendations"
+    data-item='{"type": "recommendations"}'
+>
+    <a
+        href="/rob"        data-hash="{&#34;leave&#34;:&#34;rob&#34;}"        onclick="csProfileMenu.itemClick(this);"
+        class=""
+    >
+        Recommendations    </a>
+</li>                    </ul>
+                </div>
+                            </nav>
+        </div>
+        <script>
+            var csProfileMenu = cs.components().profileMenu('csFloatingMenu', {});
+            cs.barManager().register('#csFloatingMenuWrapper');
+
+            $('.floating-completion').on('click.loadExperience', function() {
+                var experienceLink = $("#csFloatingMenu li[rel='experience'] a:eq(0)");
+                csProfileMenu.itemClick(experienceLink);
+            });
+        </script>
+        <!-- /Floating menu -->
+    </div>
+
+    <!-- Main Content -->
+    <section id="csBlockLoader">
+        <script>
+    csProfileMenu.selectItemType('about');
+</script>
+
+<div data-mod-group="personal_talent">
+        </div>
+
+<div data-section="about">
+    <div class="alt-colors inverted h-spacing-50">
+                <div class="mw " data-mod-name="personal_experience">
+<div class="section transition-bottom v-spaced-children" data-section="experience">
+    <div class="mw " data-mod-name="skills_experience">
+<div class="sub-section r-width sidepadding" id="csProfileSkills">
+    <script type="text/javascript">
+        if ('undefined' == typeof scrollToList) scrollToList = {};
+        $.extend(scrollToList, {
+            'skills': 'csProfileSkills'
+        });
+    </script>
+    <div style="margin-bottom: 25px">
+        <h6 class="h21 light uppercase xsmb">
+            Skills        </h6>
+            </div>
+            <ul class="taglist-tags size-large spacing" id="skillsWrapper">
+                            <li class="tag " data-list="skills-list">Software Development</li>
+                                <li class="tag " data-list="skills-list">Analysis</li>
+                                <li class="tag " data-list="skills-list">Analytics</li>
+                                <li class="tag " data-list="skills-list">Database Design</li>
+                                <li class="tag " data-list="skills-list">Ideation</li>
+                                <li class="tag " data-list="skills-list">LAMP</li>
+                                <li class="tag " data-list="skills-list">MySQL</li>
+                                <li class="tag " data-list="skills-list">PHP</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Project Execution</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Project Implementation</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Project Planning</li>
+                                <li class="tag extra-item hide" data-list="skills-list">SEO</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Social Marketing</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Social Media Marketing</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Strategic Consulting</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Web Analytics</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Web Applications</li>
+                                <li class="tag extra-item hide" data-list="skills-list">Web Development</li>
+                                <li class="tag grey t-accent" style="cursor: pointer;" id="toggleSkillsLink">10 more</li>
+                        </ul>
+        <script type="text/javascript">
+            cs.components().expandList({
+                toggleLinkId: 'toggleSkillsLink',
+                listName: 'skills-list',
+                listContainerId: 'skillsWrapper',
+                linkTextMore: "10 more",
+                linkTextLess:"less"
+            });
+        </script>
+
+
+    </div></div>
+    <div class="mw " data-mod-name="personal_work">
+<div class="sub-section r-width sidepadding">
+    <h6 class="h21 light uppercase inline-centered" style="margin-bottom: 25px;">
+        Experience    </h6>
+
+
+            <div class="columns one-col" id="csWorkHistoryList">
+            <div class="person-blk ">
+    <div
+                            id="csWorkEntry88563"
+                >
+        <div class="flex-wrapper v-center v-top-r">
+            <div class="fw profile-img i64 i48t" style="margin-right: 20px;">
+                <a href="https://www.f6s.com/surroundsme" target="_blank" onClick="event.stopPropagation();"><img src="https://s3.amazonaws.com/f6s-public/profiles/99315_th2.jpg" class="profile o i64 i48t" /></a>
+            </div>
+            <div class="sub-block">
+                <p class="t b18">
+                    <!--
+                                     --><a class="main noline" href="https://www.f6s.com/surroundsme" target="_blank" onClick="event.stopPropagation();"><!--
+                    -->SurroundsMe<!--
+                 --></a><!--
+                                         --> &bull; Co-Founder<!--
+                        -->
+
+                                    </p>
+                                    <p class="t b18 t-tertiary">
+                        Crowd sourced social marketing                    </p>
+                                                </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@id": "https://www.f6s.com/rob",
+        "@type": "Person",
+        "worksFor": {
+            "@type": "Organization",
+            "@id": "https://www.f6s.com/surroundsme",
+            "name": "SurroundsMe",
+            "url": "https://www.f6s.com/surroundsme",
+            "logo": "https://s3.amazonaws.com/f6s-public/profiles/99315_th2.jpg"
+        }
+    }
+</script>
+<div class="person-blk ">
+    <div
+                            id="csWorkEntry56842"
+                >
+        <div class="flex-wrapper v-center v-top-r">
+            <div class="fw profile-img i64 i48t" style="margin-right: 20px;">
+                <a href="https://www.f6s.com/saasventures" target="_blank" onClick="event.stopPropagation();"><img src="https://s3.amazonaws.com/f6s-public/profiles/353276_th2.jpg" class="profile o i64 i48t" /></a>
+            </div>
+            <div class="sub-block">
+                <p class="t b18">
+                    <!--
+                                     --><a class="main noline" href="https://www.f6s.com/saasventures" target="_blank" onClick="event.stopPropagation();"><!--
+                    -->SaaS Ventures<!--
+                 --></a><!--
+                                         --> &bull; Co-Founder<!--
+                        -->
+
+                                    </p>
+                                            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@id": "https://www.f6s.com/rob",
+        "@type": "Person",
+        "worksFor": {
+            "@type": "Organization",
+            "@id": "https://www.f6s.com/saasventures",
+            "name": "SaaS Ventures",
+            "url": "https://www.f6s.com/saasventures",
+            "logo": "https://s3.amazonaws.com/f6s-public/profiles/353276_th2.jpg"
+        }
+    }
+</script>
+<div class="person-blk ">
+    <div
+                            id="csWorkEntry61616"
+                >
+        <div class="flex-wrapper v-center v-top-r">
+            <div class="fw profile-img i64 i48t" style="margin-right: 20px;">
+                <a href="https://www.f6s.com/bizgym" target="_blank" onClick="event.stopPropagation();"><img src="https://s3.amazonaws.com/f6s-public/profiles/353285_th2.jpg" class="profile o i64 i48t" /></a>
+            </div>
+            <div class="sub-block">
+                <p class="t b18">
+                    <!--
+                                     --><a class="main noline" href="https://www.f6s.com/bizgym" target="_blank" onClick="event.stopPropagation();"><!--
+                    -->BizGym<!--
+                 --></a><!--
+                                         --> &bull; Co-Founder<!--
+                        -->
+
+                                    </p>
+                                    <p class="t b18 t-tertiary">
+                        Business success system for entrepreneurs, startups and students.                    </p>
+                                                </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@id": "https://www.f6s.com/rob",
+        "@type": "Person",
+        "worksFor": {
+            "@type": "Organization",
+            "@id": "https://www.f6s.com/bizgym",
+            "name": "BizGym",
+            "url": "https://www.f6s.com/bizgym",
+            "logo": "https://s3.amazonaws.com/f6s-public/profiles/353285_th2.jpg"
+        }
+    }
+</script>
+<div class="person-blk ">
+    <div
+                            id="csWorkEntry18620"
+                >
+        <div class="flex-wrapper v-center v-top-r">
+            <div class="fw profile-img i64 i48t" style="margin-right: 20px;">
+                <a href="https://www.f6s.com/adduels" target="_blank" onClick="event.stopPropagation();"><img src="https://s3.amazonaws.com/f6s-public/profiles/344207_th2.jpg" class="profile o i64 i48t" /></a>
+            </div>
+            <div class="sub-block">
+                <p class="t b18">
+                    <!--
+                                     --><a class="main noline" href="https://www.f6s.com/adduels" target="_blank" onClick="event.stopPropagation();"><!--
+                    -->AdDuels<!--
+                 --></a><!--
+                                         --> &bull; Advisor<!--
+                        -->
+
+                                    </p>
+                                    <p class="t b18 t-tertiary">
+                        We deliver advertisements to consumers and market research to businesses.                    </p>
+                                                </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@id": "https://www.f6s.com/rob",
+        "@type": "Person",
+        "worksFor": {
+            "@type": "Organization",
+            "@id": "https://www.f6s.com/adduels",
+            "name": "AdDuels",
+            "url": "https://www.f6s.com/adduels",
+            "logo": "https://s3.amazonaws.com/f6s-public/profiles/344207_th2.jpg"
+        }
+    }
+</script>
+        </div>
+        </div></div>
+        </div></div>
+        <div class="mw " data-mod-name="recommendations_personal">
+
+<div class="section transition-bottom" data-section="recommendations">
+
+<div class="sub-section r-width sidepadding h-spacing" id="csProfileRecommendations">
+    <script type="text/javascript">
+        if ('undefined' == typeof scrollToList) scrollToList = {};
+        $.extend(scrollToList, {
+            'recommendations': 'csProfileRecommendations'
+        });
+    </script>
+
+    <div style="margin-bottom: 25px">
+        <h6 class="h21 light uppercase inline-centered">
+            Recommendations                    </h6>
+            </div>
+
+            <div class="person-blk large-margin">
+            <div class="flex-wrapper">
+                                    <div class="fw profile-img i64 i48t only-desktop" style="margin-right: 20px;">
+                        <img src="https://s3.amazonaws.com/f6s-public/profiles/1605197_th2.jpg" class="profile i64r" />
+                    </div>
+                                    <div
+                    id="csRecommendationTextBlock"
+                    class="
+                        editable-block padding-12
+                        bg-white                        structured-data no-icon solid-border mid-grey-border
+                    "
+                >
+                    <div class="wrapper spacing-large-r break-tablet">
+                        <div class="wide">
+                            <textarea id="csRecommendationText"></textarea>
+                        </div>
+                        <div style="text-align: right;">
+                            <span id="csSendRecommendation"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var csRecommendationTextBlock = $('#csRecommendationTextBlock');
+            var csRecommendationText = cs.builder().input('csRecommendationText', {
+                size: 'b18',
+                color: 'none',
+                                customClassName: 'recommendation-text ',
+                placeholder: "Do you know Rob? Recommend them now.",
+                maxLength: 1000,
+                hideCounter: true,
+                resizable: true,
+                expandMax: 330,
+                                disabled: false,
+                onKeyUp: function() {
+                    if ('' == $.trim(this.getValue())) {
+                        csSendRecommendation.disable();
+                    } else {
+                        csSendRecommendation.enable();
+                    }
+                },
+                onFocus: function() {
+                    csRecommendationTextBlock.addClass('active');
+                },
+                onBlur: function() {
+                    csRecommendationTextBlock.removeClass('active');
+                }
+            });
+
+            var csSendRecommendation = cs.builder().button('csSendRecommendation', {
+                color: 'green',
+                customClassName: 'mobile-full',
+                title: "Recommend",
+                                    onClick: function() {
+                        var self = this;
+                        var post = {
+                            sub_type: 'profile',
+                            referred_actor: 82092,
+                            message: csRecommendationText.getValue()
+                        };
+
+                        this.disable();
+                        $.post('/account/main/save-actor-reference', post, function(response) {
+                            if ('undefined' != typeof response.status) {
+                                if ('ok' == response.status) {
+                                    var modOptions = {
+    name: 'recommendations_personal',
+    args: {}
+};
+
+
+csMods.reload(modOptions);                                } else if ('err' == response.status) {
+                                    cs.components().alert(decodeURIComponent(response.status_desc), {
+                                        version: 2,
+                                        type: 'err',
+                                        method: 'new',
+                                        autoclose: true,
+                                        autocloseTime: 3000,
+                                        forceClose: true
+                                    });
+                                }
+
+                                self.enable();
+                            }
+                        }, 'json');
+                    },
+                                                    disabled: true            });
+
+                    </script>
+
+    </div></div></div>
+            </div>
+    </div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ProfilePage",
+        "about": {
+            "@type": "Person",
+            "name" : "Rob Bertholf",
+            "url": "https://www.f6s.com/rob"
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    </script><script type="text/javascript">if ('undefined' != typeof csProfileMenu) {csProfileMenu.addItem('about',{"type":"about","href":"\/rob","title":"About","temp":false,"hide":false,"hide_mobile":false,"notifications":null,"notifications_read":null,"data_hash":{"leave":"rob"}});csProfileMenu.addItem('experience',{"type":"experience","href":"\/rob","title":"Experience","temp":false,"hide":false,"hide_mobile":true,"notifications":null,"notifications_read":null,"data_hash":{"leave":"rob"}});csProfileMenu.addItem('recommendations',{"type":"recommendations","href":"\/rob","title":"Recommendations","temp":false,"hide":false,"hide_mobile":true,"notifications":null,"notifications_read":null,"data_hash":{"leave":"rob"}});csProfileMenu.selectItemType('');}</script>    </section>
+    <script type="text/javascript">
+        var mainPager = cs.getPager('csBlockLoader', {
+            anchors: [
+                "profile/82092/about",
+                "profile/82092/edit"
+            ],
+            anchorPrefix: ["profile/82092", "rob"],
+            defaultAnchor: "profile/82092/about", // Default anchor
+            currentUrl: '/rob', // Default URL (path) of the page - where it was created
+            scrollTop: false,
+            noLoader: false, // Enable to hide standard loader
+            scrollTarget: 'window',
+            onAnchorChange: function() {
+                if (-1 != location.href.indexOf('/edit')) {
+                    cs.getPager('csBlockLoader').options.noLoader = true;
+                } else {
+                    cs.getPager('csBlockLoader').options.noLoader = false;
+                }
+            },
+            beforeLoad: function() {
+                var scroll = $('#csPageTop').height() - cs.barManager().displacedHeight;
+
+                 if ($(document).scrollTop() > scroll || ('undefined' != typeof firstLoad && firstLoad)) {
+                     $(document).scrollTop(scroll);
+                 }
+            },
+            onLoaderStart: function() {
+                if ($('#csBlockLoaderTransition').length) {
+                    $('#csBlockLoaderTransition').show();
+                }
+            },
+            onComplete: function() {
+                if ($('#csBlockLoaderTransition').length) {
+                    $('#csBlockLoaderTransition').hide();
+                }
+            }
+        });
+
+        cs.stats().log('Jobs.personalProfile.impressions');
+
+    </script>
+    <!-- /Main Content -->
+
+</div>
+</div>
+<script type="text/javascript">
+        csMods.setParam('actor_id', 82092 );
+
+    cs.options.fbUserData = 'public_profile, email, user_friends';
+    if( 'undefined' != typeof csFacebook ) csFacebook.userData = csFacebook.options.userData = cs.options.fbUserData;
+</script>
+
+
+</div>  </div>
+</div></div>
+    <div id="bottom" class="footer-wrapper">
+        <div class="footer-content">
+            <div class="fw footer-col-1">
+                                <p><strong>Add Your</strong></p>
+                <ul class="footer-list mobile-2-col">
+                    <li><a href="javascript:;" onclick="csAddEventButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Event"}'>Event</a></li>
+                    <li><a href="javascript:;" onclick="csAddOrganizationButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Team"}'>Startup</a></li>
+                    <li><a href="javascript:;" onclick="csAddJobButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Job"}'>Job Listing</a></li>
+                    <li><a href="javascript:;" onclick="csAddDealButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Deal"}'>Deal</a></li>
+                    <li><a href="javascript:;" onclick="csAddProgramButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Accelerator"}'>Accelerator</a></li>
+                    <li><a href="javascript:;" onclick="csAddInvestFundButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Investment Fund"}'>Inv. Fund</a></li>
+                    <li><a href="javascript:;" onclick="csAddAngelGroupButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Angel Group"}'>Angel Group</a></li>
+                    <li><a href="javascript:;" onclick="csAddProgramButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Contest"}'>Contest</a></li>
+                    <li><a href="javascript:;" onclick="csAddProgramButtonClick();"  data-ga='{"section":"Personal Profile","feature":"Footer Add Your Add Coworking"}'>Coworking</a></li>
+                </ul>
+            </div>
+            <div class="fw footer-col-2">
+                                <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="footer-list">
+                    <li><a itemprop="url"  href="https://www.f6s.com/iot"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Group: Internet of Things"}'>Internet of Things</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/deals"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Get Deals"}'>Get Free Deals</a></li>
+                    <li><a href="https://www.f6s.com/deals" onclick="csAddDealButtonClick(); return false;"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Promote Deal"}'>Promote your own Deal</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/jobs"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Startup Jobs"}'>Startup Jobs</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/startups"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Startups"}'>Startups</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/contests"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Contests"}'>Contests</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/events"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Startup Events"}'>Startup Events</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/investment-funds"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Investment Funds"}'>Investment Funds</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/accelerators"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals Accelerators"}'>Accelerators</a></li>
+                    <li><a itemprop="url" href="https://www.f6s.com/gb/rd-tax-credits"  data-ga='{"section":"Personal Profile","feature":"Footer Verticals R&amp;D"}'>R&amp;D Tax Relief</a></li>
+                </ul>
+            </div>
+            <div class="fw footer-col-3">
+                                <ul class="footer-list">
+                    <li><a href="https://www.f6s.com/f6s"  data-ga='{"section":"Personal Profile","feature":"Footer About About F6S"}'>About</a></li>
+                    <li><a href="https://www.f6s.com/docs"  data-ga='{"section":"Personal Profile","feature":"Footer About API Documentation"}'>F6S API</a></li>
+                    <li><a href="https://www.f6s.com/privacy-policy"  data-ga='{"section":"Personal Profile","feature":"Footer About Privacy"}'>Privacy policy</a></li>
+                    <li><a href="https://www.f6s.com/terms-and-conditions"  data-ga='{"section":"Personal Profile","feature":"Footer About Terms"}'>Terms and Conditions</a></li>
+                    <li><a href="https://www.f6s.com/cookie-policy"  data-ga='{"section":"Personal Profile","feature":"Footer About Cookies"}'>Cookie Policy</a></li>
+                    <li><a href="javascript:;" onClick="csPopup.display('/main/frontpage/show-feedback'); "  data-ga='{"section":"Personal Profile","feature":"Footer About Send Feedback"}'>Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-search">
+                    <form method="get" action="https://www.f6s.com/search">
+                        <input type="text" name="q" id="csFooterSearch" />
+                        <script type="text/javascript">
+                            var csFooterSearchObj = cs.components().input('csFooterSearch', {
+                                version: 2,
+                                fullWidth: true,
+                                defaultText: 'Search F6S',
+                                icon: {
+                                    fa: 'fa-search'
+                                },
+                                onEnter: function() {
+                                    // Track the click of the button on Google Analytics
+                                    if ('undefined' != typeof _gaq)
+                                        _gaq.push(['_trackEvent', 'Search Submit', 'Footer']);
+                                }
+                            })
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-additional">
+            <div class="b14 t-secondary">
+                &copy; 2017 F6S Network Limited. All rights reserved.            </div>
+            <div class="flex-wrapper centered-items" style="margin-top: 8px;">
+                <span class="fw b12 t-uppercase" style="margin-right: 8px;">Powered by</span><img class="fw" style="height: 24px;" src="https://www.f6s.com/images/sendgrid_logo.png" alt="Sendgrid">
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+
+    function is_application_page() {
+        var hash = location.hash;
+        hash = hash.substring( 2 ).replace('-', '_');
+        var static_check = false;
+        var ajax_check = ( -1 != $.inArray(hash, ['programs/ajax_application', 'apply']) );
+        return static_check || ajax_check;
+    }
+
+            if ( ! is_application_page() ) {
+            // Non-application form popups
+                            $(function() {
+                    setTimeout(function() {
+                        if (!csPopup.contentContainer && location.hash != '#programs/ajax-application') {
+                            if (csPopup.secondsSincePopupOpened() >= 3600) {
+                                csPopup.display('/profile/2154472/main/popup-investor?stat[type]=investor-popup:opened&stat[actor_id]=2154472');
+                            }
+                        }
+                    },2000);
+                });
+                        }
+
+
+
+    </script>
+
+
+
+
+    <!-- Site24x7 Apdex Score -->
+    <script type="text/javascript">var rumMOKey='323cc88ea2e43d9fe4f6e07c22034970';(function(){if(window.performance && window.performance.timing && window.performance.navigation) {var site24x7_rum_beacon=document.createElement('script');site24x7_rum_beacon.async=true;site24x7_rum_beacon.setAttribute('src','//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey='+rumMOKey);document.getElementsByTagName('head')[0].appendChild(site24x7_rum_beacon);}})(window)</script>
+
+    <!-- ShieldSquare snippet -->
+    <script>
+        var __uzdbm_a = "9ccdbec8-92dc-d144-8cf3-5fdf81b4fa37";
+    </script>
+    <div id="ss_098786_234239_238479_190541"></div>
+    <script async = "true" src="https://cdn.perfdrive.com/static/jscall_min.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"510ff838d0","applicationID":"59456458,66572948","transactionName":"YgZRZkRVWkZVBxYMWFtMcEdFQFtYGzQQClFcD1Z\/V11adlsKFhdYWQ9WQAwOWVRdCg==","queueTime":0,"applicationTime":191,"atts":"TkFSEAxPSUg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
